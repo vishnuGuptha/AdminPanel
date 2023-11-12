@@ -1,0 +1,15 @@
+.--table-footer-container {
+  padding: 20px 0px;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+  .--pagination button:disabled,
+  .--delete-selected-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  .--current-page {
+    background: repeating-radial-gradient(green, transparent 200px);
+  }
+}

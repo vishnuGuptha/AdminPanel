@@ -1,0 +1,80 @@
+.--modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.--modal-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.--modal h3 {
+  margin-bottom: 10px;
+}
+
+.--modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.--form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.--modal label {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50px;
+}
+
+.--modal input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  width: 150px;
+}
+
+.--modal button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.--modal button:last-child {
+  background-color: #f44336;
+}
+
+.--modal button:hover {
+  background-color: #45a049;
+}
+
+.--modal input:focus,
+.--modal button:focus {
+  outline: none;
+}
+
+.--modal-content.--closing {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
